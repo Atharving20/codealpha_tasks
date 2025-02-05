@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="title icon" type="image/png" href="images/camera-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Image Gallery</h1>
+        <nav>
+          <a href="" id="menu-icon"></a> 
+          <ul>
+            <li><a href="#nature">Nature</a></li>
+            <li><a href="#wildlife">Wildlife</a></li>
+            <li><a href="#hikers">Traditions</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <section>
+        <a name="nature"></a>
+        <h2>Nature</h2>
+        <div class="container">
+          <a href="images/nature1.jpeg"><img src="images/nature1.jpeg" alt="nature1"></a>
+          <a href="images/nature2.jpeg"><img src="images/nature2.jpeg" alt="nature2"></a>
+          <a href="images/nature3.jpeg"><img src="images/nature3.jpeg" alt="nature3"></a>
+          <a href="images/nature4.jpeg"><img src="images/nature4.jpeg" alt="nature4"></a>
+          <a href="images/nature5.jpeg"><img src="images/nature5.jpeg" alt="nature5"></a>
+          <a href="images/nature6.jpeg"><img src="images/nature6.jpeg" alt="nature6"></a>
+        </div>
+      </section>
+      <!-- End of Nature Section -->
+      <section>
+          <a name="wildlife"></a>
+          <h2>Wildlife</h2>
+          <div class="container">
+              <a href="https://www.naturesafariindia.com/wp-content/uploads/2021/07/gangetic-region1.jpg"><img src="https://www.naturesafariindia.com/wp-content/uploads/2021/07/gangetic-region1.jpg" alt="animal1"></a>
+              <a href="https://bigcatsindia.com/wp-content/uploads/2023/09/peacock-wildlife.webp"><img src="https://bigcatsindia.com/wp-content/uploads/2023/09/peacock-wildlife.webp" alt="animal2"></a>
+              <a href="https://images.unsplash.com/photo-1551705459-5611b0d0b60e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2lsZGxpZmV8ZW58MHx8MHx8fDA%3D"><img src="https://images.unsplash.com/photo-1551705459-5611b0d0b60e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2lsZGxpZmV8ZW58MHx8MHx8fDA%3D" alt="animal3"></a>
+              <a href="https://static.toiimg.com/photo/msid-110848636,width-96,height-65.cms"><img src="https://static.toiimg.com/photo/msid-110848636,width-96,height-65.cms" alt="animal4"></a>
+              <a href="https://tribe.article-14.com/uploads/2021/04-April/09-Fri/1617917121-0b8257_09fb5d4459cb4f5f85f0bdb8e1d621a9~mv2.jpg"><img src="https://tribe.article-14.com/uploads/2021/04-April/09-Fri/1617917121-0b8257_09fb5d4459cb4f5f85f0bdb8e1d621a9~mv2.jpg" alt="animal5"></a>
+              <a href="https://121clicks.com/wp-content/uploads/2024/07/indian-wildlife-photography-26.jpg"><img src="https://121clicks.com/wp-content/uploads/2024/07/indian-wildlife-photography-26.jpg" alt="animal6"></a>
+          </div>
+      </section>
+      <!-- End of Wildlife Section -->
+      <section>
+          <a name="hikers"></a>
+          <h2>Traditions</h2>
+          <div class="container">
+              <a href="https://nextrip.in/wp-content/uploads/2023/10/Traditional-Kathakali-dance.jpg"><img src="https://nextrip.in/wp-content/uploads/2023/10/Traditional-Kathakali-dance.jpg" alt="backpacker1"></a>
+              <a href="https://www.originaltravel.co.uk/travel-blog/ShowPhoto/3855/0"><img src="https://www.originaltravel.co.uk/travel-blog/ShowPhoto/3855/0" alt="backpacker2"></a>
+              <a href="https://images.indianexpress.com/2022/03/Shivaji.jpg"><img src="https://images.indianexpress.com/2022/03/Shivaji.jpg" alt="backpacker3"></a>
+              <a href="https://www.authenticindiatours.com/app/uploads/2022/05/10-Customs-and-Traditions-in-Indian-Culture-Jaisalmer-Desert-Festival-940x585-c-default.jpeg"><img src="https://www.authenticindiatours.com/app/uploads/2022/05/10-Customs-and-Traditions-in-Indian-Culture-Jaisalmer-Desert-Festival-940x585-c-default.jpeg" alt="backpacker4"></a>
+              <a href="https://www.indianatravelservices.com/wp-content/uploads/blog-banners_diwali.jpg"><img src="https://www.indianatravelservices.com/wp-content/uploads/blog-banners_diwali.jpg" alt="backpacker5"></a>
+              <a href="https://www.holidify.com/images/cmsuploads/compressed/indiacamels_20180403112104.jpg"><img src="https://www.holidify.com/images/cmsuploads/compressed/indiacamels_20180403112104.jpg" alt="backpacker6"></a>
+          </div>
+      </section>
+      <!-- End of Hikers Section -->
+      <button onclick="goToTop()" id="topBtn" title="Go to top of page">Top of Page</button>
+    </div>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
